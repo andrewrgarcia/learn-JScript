@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			var a,b;
+			function setValues()
+			{
+				a=Number(document.getElementById("a").value);
+				b=Number(document.getElementById("b").value);
+			}
+			function plus()
+			{
+				setValues();
+				result=a+b;
+				alert("It's "+result);
+			}
+			function minus()
+			{
+				setValues();
+				result=a-b;
+				alert("It's "+result);
+			}
+			function div()
+			{
+				setValues();
+				result=a/b;
+				alert("It's "+result);
+			}
+			function mult()
+			{
+				setValues();
+				result=a*b;
+				alert("It's "+result);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<input id="a" type="text"/>
+			<input id="b" type="text"/>
+			<input type="button" onclick="plus()" value="+"/>
+			<input type="button" onclick="minus()" value="-"/>
+			<input type="button" onclick="mult()" value="*"/>
+			<input type="button" onclick="div()" value="/"/>
+	
+		</div>
+	</body>
+</html>
