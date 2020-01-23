@@ -2,18 +2,19 @@
 <html>
 	<head>
 		<script type="text/javascript">
-			
-			var a,b;
+
+			var a,b,c;
 			function setValues()
 			{
 				a=Number(document.getElementById("a").value);
 				b=Number(document.getElementById("b").value);
+				c=Number(document.getElementById("c").value);
 			}
 			function plus()
 			{
 				setValues();
 				result=a+b;
-				alert("It's "+result);
+				c="It's "+result;
 			}
 			function minus()
 			{
@@ -40,13 +41,14 @@
 		<div>
 			<input id="a" type="text"/>
 			<input id="b" type="text"/>
+			<input id="c" type="text"/>
 			<br>
 			<input type="button" onclick="plus()" value="+"/>
 			<input type="button" onclick="minus()" value="-"/>
 			<br>
 			<input type="button" onclick="mult()" value="*"/>
 			<input type="button" onclick="div()" value="/"/>
-	
+
 		</div>
 	</body>
 </html>
